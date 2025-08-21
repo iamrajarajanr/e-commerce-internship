@@ -23,11 +23,11 @@ PROHIBITIONS
 
 You cannot remove the credit link which links back to templatesjungle.com.
 
-You are not permitted to resell or redistribute (paid or free) as it is. 
+You are not permitted to resell or redistribute (paid or free) as it is.
 
 You cannot use it to build premium templates, themes or any other goods to be sold on marketplaces.
 
-If you want to share the free resource in your blog, you must point it to original TemplatesJungle.com resource page. 
+If you want to share the free resource in your blog, you must point it to original TemplatesJungle.com resource page.
 
 You cannot host the download file in your website.
 
@@ -65,5 +65,6 @@ Chocolat.js – a Free Lightbox Plugin -http://chocolat.insipi.de/
 Magnific Lightbox - https://github.com/dimsemenov/Magnific-Popup
 
 Thanks for downloading from TemplatesJungle.com !
+
 
 
