@@ -306,75 +306,24 @@
           <div class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
             <ul class="d-flex justify-content-end list-unstyled m-0">
               <li>
-                <a href="#" class="p-2 mx-1" data-bs-toggle="modal" data-bs-target="#loginModal">
-                  <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                <a href="#" class="p-2 mx-1" id="userMenuBtn" data-bs-toggle="modal" data-bs-target="#userMenuModal">
+                    <img src="images/rajprofile.jpg" alt="">
+                  <!-- <svg width="24" height="24"><use xlink:href="#user"></use></svg> -->
                 </a>
-    <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="loginModalLabel">User Login</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="loginForm">
-              <div class="mb-3">
-                <label for="loginEmail" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
-              </div>
-              <div class="mb-3">
-                <label for="loginPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="loginPassword" placeholder="Password">
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <button type="button" class="btn btn-link p-0" id="showSignUpBtn">Sign Up</button>
-    <!-- Sign Up Modal -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="signUpModalLabel">Create Account</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="signUpForm">
-              <div class="mb-3">
-                <label for="signUpName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="signUpName" placeholder="Enter your name" required>
-              </div>
-              <div class="mb-3">
-                <label for="signUpEmail" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="signUpEmail" placeholder="Enter email" required>
-              </div>
-              <div class="mb-3">
-                <label for="signUpPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="signUpPassword" placeholder="Password" required>
-              </div>
-              <div class="mb-3">
-                <label for="signUpConfirmPassword" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="signUpConfirmPassword" placeholder="Confirm Password" required>
-              </div>
-              <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-success">Create Account</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-                <button type="button" class="btn btn-link p-0">Forgot Password?</button>
-              </div>
-              <div class="d-grid gap-2">
-                <a class="btn btn-primary" href="index2.html"><button type="submit"class="btn btn-primary" >Login</button></a>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+                <!-- User Menu Modal -->
+                <div class="modal fade" id="userMenuModal" tabindex="-1" aria-labelledby="userMenuModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="userMenuModalLabel">User Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center">
+                        <button type="button" class="btn btn-danger w-100" id="signoutBtn">Sign Out</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li>
                 <a href="#" class="p-2 mx-1">
@@ -391,6 +340,17 @@
 
         </div>
       </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var signoutBtn = document.getElementById('signoutBtn');
+        if (signoutBtn) {
+          signoutBtn.addEventListener('click', function() {
+            window.location.href = 'index.html';
+          });
+        }
+      });
+    </script>
     </header>
 
     <section style="background-image: url('images/banner-1.jpg');background-repeat: no-repeat;background-size: cover;">
@@ -398,11 +358,11 @@
         <div class="row">
           <div class="col-lg-6 pt-5 mt-1">
             <h2 class="display-1 ls-1"><span class="fw-bold text-primary">GreenGlow</span> Foods at your <span class="fw-bold">Doorsteps...🛒</span></h2>
-           
+            
           </div>
         </div>
 
-      
+        
 
       </div>
     </section>
@@ -1206,7 +1166,33 @@
       </div>
     </section>
 
-   
+    
+
+    <section class="py-4">
+      <div class="container-lg">
+        <h2 class="my-4">People are also looking for</h2>
+        <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Angie’s Boomchickapop Corn</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Angie’s Boomchickapop Corn</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
+        <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
+      </div>
+    </section>
+
+    
 
     <footer class="py-5">
       <div class="container-lg">

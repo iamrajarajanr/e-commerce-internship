@@ -1,18 +1,16 @@
-/*
-Theme Name: Organic
-Theme URI: https://templatesjungle.com/
-Author: TemplatesJungle
-Author URI: https://templatesjungle.com/
-Description: Organic is specially designed product packaged for eCommerce store websites.
-Version: 1.1
-*/
+.img-fluid{
+  width:100px;
+}
 
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-/** VARIABLES
---------------------------------------------------------------*/
+#userMenuBtn img{
+border-radius:100px;
+width:35px;
+}
+
+footer img{
+  width: 200px;
+  height: 100px;
+}
 body {
   --heading-font        : "Inter", sans-serif;
   --bs-link-color: #333;
